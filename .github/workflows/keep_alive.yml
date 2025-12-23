@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping Streamlit apps
+        shell: bash
         run: |
           urls=(
             "https://bukky-ml-project-health-insurance-prediction.streamlit.app/"
