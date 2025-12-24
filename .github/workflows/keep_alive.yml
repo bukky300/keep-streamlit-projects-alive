@@ -21,6 +21,6 @@ jobs:
 
           for url in "${urls[@]}"; do
             echo "Waking $url"
-            curl -L --max-time 60 "$url"
+            curl -L --max-time 60 --max-redirs 5 --fail "$url"
             sleep 10
           done
